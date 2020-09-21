@@ -39,6 +39,7 @@ ul.breadcrumbs {
     zoom: 1;
     vertical-align: top;
     height: 40px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 ul.breadcrumbs li {
     position: relative;
