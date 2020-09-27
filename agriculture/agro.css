@@ -106,7 +106,7 @@
 
 .card {
     width: 280px;
-    height: 400px;
+    height: 420px;
     /* border-radius: 15px; */
     padding: 1.5rem;
     background: white;
@@ -165,31 +165,191 @@
       margin-top: 5px;
   }
 
+ .card_heading{
+     padding-top: 5px;
+      height: 40px !important;
+  }
+
   /*product section */
 
   .products{
     border-bottom: 2px solid gray;
   }
 
+  .products h2{
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .products__container{
+      display: flex;
+      padding-left: 30px;
+      padding-right: 30px;
+      justify-content: space-between;
+      padding-bottom: 10px;
+
+  }
+
+  .product{
+    margin-right: 50px !important;
+    width: 280px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  .product:hover{
+    border: 1px solid #777;
+  }
+
+  .product__image{
+      width: 280px;
+      height: 250px;
+  }
+
+  .product__desc{
+    padding: 15px;
+    text-align: center;
+  }
+
   /*gallery section */
   
   .gallery{
     border-bottom: 2px solid gray;
+    padding-bottom: 10px;
   }
+
+  .gallery h2{
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .gallery__container{
+    display: flex;
+    color: black;
+  }
+
+  .item__image{
+    width: 100%;
+    height: 65%;
+  }
+
+  .item__description{
+    padding-bottom: 10px;
+    color: #777;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 20px;
+  }
+
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row{
+  width: 680px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.item__container {
+  width: 500px;
+  position: relative;
+  display: none;
+  border: 1px solid #ddd;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item__container__preview{
+  width: 500px;
+  position: relative;
+  border: 1px solid #ddd;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.item__container__preview > h2{
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  margin-top: 40%;
+  margin-bottom: 40%;
+  color: #777;
+}
+
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 
   /*contact section */
   
   .contact{
     border-bottom: 2px solid gray;
-    display: flex;
     padding-bottom: 5px;
   }
+
+  .contact__section{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  .contact h2{
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+}
 
   .address{
       display: flex;
       flex-direction: column;
       flex: 0.45;
       padding-right: 20px;
+      padding-left: 10px;
+      box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+      padding-bottom: 5px;
   }
 
   .address > h3{
@@ -197,6 +357,15 @@
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    text-decoration: underline;
+  }
+
+  .contact__form >h3{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
   }
 
   .address > p{
@@ -208,9 +377,85 @@
     margin: 0 !important;
   }
 
+  .contact__form{
+    display: flex;
+    flex: 0.53;
+    flex-direction: column;
+    padding-left: 10px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .contact__form > h3{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .contact__name{
+    width: 330px;
+    height: 40px;
+    border: 1px solid gray;
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .contact__email{
+    width: 400px;
+    height: 40px;
+    border: 1px solid gray;
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .contact__query{
+    width: 600px;
+    border: 1px solid gray;
+    font-size: 18px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .contact__name:focus{
+    outline: none !important;
+    border: 1px solid #416422;
+  }
+
+  .contact__email:focus{
+    outline: none !important;
+    border: 1px solid #416422;
+  }
+
+  .contact__query:focus{
+    outline: none !important;
+    border: 1px solid #416422;
+  }
+
+  .send__button{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #416422;
+    text-decoration: none;
+    border: 1px solid white;
+    outline: none !important;
+  }
+
+  .send__button:hover{
+      border: 1px solid #416422;
+      color: #416422;
+      background-color: white;
+  }
+
   .map{
     width: 400px;
-    height:300px;
+    height:280px;
   }
 
   /*footer section*/
