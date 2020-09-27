@@ -1,3 +1,7 @@
+.contactInfo__container__mobile{
+    display: none;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -267,6 +271,9 @@ ul.breadcrumbs li a {
     font-size: 15px;
     margin-top: 8px;
   }
+
+  
+
   .link__to__site{
       text-decoration: none !important;
   }
@@ -286,3 +293,68 @@ ul.breadcrumbs li a {
 .btn:hover {
     background-color: rgba(255, 255, 255, 0.12);
 }
+
+/*Media query for mobile view*/
+@media screen and (max-width: 800px) {
+    .cards {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    .contactInfo__container{
+        display: none;
+    }
+    .cards_item {
+        padding-left: 35px;
+   }
+   .contactInfo__container__mobile{
+        display: block;
+   }
+   .breadcrumbs__mobile li{
+       list-style: none;
+   }
+   .list__mobile{
+       padding-bottom: 5px;
+       display: flex;
+       color: #757578;
+       
+   }
+   .social__mobile{
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        padding: 6px;
+        border-radius: 50%;
+   }
+   .facebook__icon{
+       padding-top: 6px;
+       padding-left: 10px;
+       padding-right: 10px;
+       padding-bottom: 6px;
+   }
+   .instagram__icon{
+    padding-left: 8px;
+    padding-right: 8px;
+   }
+   .googlePlus__icon{
+    padding-left: 5px;
+    padding-right: 5px; 
+   }
+   .twitter__icon{
+    padding-left: 7px;
+    padding-right: 7px;  
+   }
+   .linkedIn__Icon{
+    padding-left: 8px;
+    padding-right: 8px;  
+   }
+   .breadcrumbs__mobile li a{
+    color: #757575;
+    text-decoration: none !important;
+   }
+   .container{
+       width: 100%;
+   }
+    .logo__container > img {
+    max-width: 130px !important;
+    }
+  }
