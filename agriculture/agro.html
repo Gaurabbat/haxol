@@ -6,7 +6,8 @@
         <!--CSS files-->
         <link rel="stylesheet" href="agro.css">
         <link rel="stylesheet" href="../global_assets/css/global.css">
-        <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">        
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
 
         <script>
             function myFunction(imgs) {
@@ -167,20 +168,36 @@
                         <p><i class="fa fa-envelope" aria-hidden="true"></i> info@haxolindia.in</p>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1829751782793!2d88.37250841496295!3d22.75858988508738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9406615610f7f890!2sHAXOL%20INDIA%20PRIVATE%20LIMITED%20(Renewable%20Energy%20Consultants%20%26%20EPC)!5e0!3m2!1sen!2sin!4v1601127622868!5m2!1sen!2sin" class="map"></iframe>
                     </div>
-                    <div class=contact__form>
-                    <!-- <form action=""> -->
+                    <form class=contact__form action="">
                         <h3>Please reach us for any queries</h3>
                         <input type="text" placeholder="Your name" class="contact__name"/>
                         <input type="email" placeholder="Your email" class="contact__email"/>
                         <textarea placeholder="Your query" rows="6" cols="8" class="contact__query"></textarea>
                         <input type="submit" value="Send" class="send__button"/>
-                    <!-- </form> -->
-                    </div>
+                    </form>
                 </div>
         </div>
         </div>
         <div class="footer">
             <div class="copyright text-center">© All Rights Reserved 2020 | Haxol India Pvt. Ltd.</div>
         </div>
+        <div class="top-scrollerx js-top-scrollerx svg-icons" id="scroll__to__top" title="Scroll to Top">
+            <span><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+         </div>
+         <script>
+         $(window).scroll(function(){
+           if ($(this).scrollTop() > 400) {
+             $('.js-top-scrollerx').fadeIn();
+           } else {
+             $('.js-top-scrollerx').fadeOut();
+           }
+         });
+         //Click event to scroll to top
+         $('.js-top-scrollerx').click(function(){
+           $('html, body').animate({scrollTop : 0},1000);
+           return false;
+         });
+         
+         </script>
     </body>
     </html>
