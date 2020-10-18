@@ -130,6 +130,11 @@ a.w3_agile_vimeo:hover{
 	opacity: 0.5;
 }
 
+#product__gallery{
+	max-height: 900px;
+	overflow-y: scroll;
+}
+
 
 /*-- menu-navigation --*/
 .shy-menu{

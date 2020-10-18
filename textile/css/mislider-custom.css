@@ -42,7 +42,9 @@ color: #fff;
 }
 @media (max-width: 800px){
 	.mis-slider li img {
-		max-width: 190px;
+		max-width: 200px;
+		max-height: 200px;
+		
 	}
 	.mis-slide {
 		margin-top: -115px;
