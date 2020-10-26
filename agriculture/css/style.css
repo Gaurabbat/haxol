@@ -135,6 +135,12 @@ a.w3_agile_vimeo:hover{
 	overflow-y: scroll;
 }
 
+.product__thumbnail{
+	height: 270px !important;
+	width: 270px !important;
+	border-radius: 50% !important;
+}
+
 
 /*-- menu-navigation --*/
 .shy-menu{
@@ -370,8 +376,14 @@ span.char3 {
     font-family:'Bree Serif', serif;
     text-align: center;
     text-transform: capitalize;
-    background:#aeb09f;
+	/* background:#aeb09f; */
+	background: url(../images/3.jpg) no-repeat 0px 0px;
 }
+
+.modal-header > img{
+	width: 100%;
+}
+
 .close {
     opacity: 1;
 }
@@ -388,11 +400,23 @@ span.char3 {
     color: #212121;
 }
 .modal-body {
-    padding:0;
+	padding:0;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .modal-content {
     border-radius: 0;
 }
+
+#product__modal__image{
+	width: 500px;
+	height: 350px;
+	margin-top: 10px;
+	border: 3px solid #ccc;
+}
+
 button.close {
     font-size: 1.5em;
     color:#737373;
