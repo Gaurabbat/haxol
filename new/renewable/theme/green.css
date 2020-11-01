@@ -1,0 +1,90 @@
+	/*green*/
+.features-column .icon-box:before{
+	background:-moz-linear-gradient(right top,#7e1438,#951b44);
+	background:-o-linear-gradient(right top,#7e1438,#951b44);
+	background:-ms-linear-gradient(right top,#7e1438,#951b44);	
+	background:-webkit-linear-gradient(right top,#7e1438,#951b44);
+}
+
+.main-header .top-bar .info-box li .icon {
+	color: #951b44;
+}
+
+.main-header .header-upper .nav-outer .btn-donate {
+	background: #951b44;
+}
+
+.main-header {
+	border-bottom: 4px solid #951b44;
+}
+
+.main-slider .circular-drop {
+	background: #951b44;
+}
+
+.main-slider .bg-color {
+	background: #951b44;
+}
+.scroll-to-top {
+	background: #951b44;
+}
+.main-features .title-box h1 {
+	color: #951b44;
+}
+.theme_color {
+	color: #951b44 !important;
+}
+.featured-fluid-section .dark-column .title-text::after {
+	background: #951b44;
+}
+a{color: #951b44;}
+
+.btn-style-two {
+	background: #951b44;
+	border: 2px solid #951b44 !important;
+}
+
+.default-featured-column .column-info {
+	color: #951b44;
+}
+
+.default-featured-column .image-box::before {
+	background: #951b44;
+}
+
+.default-featured-column .image-box::after {
+	background: #951b44;
+}
+
+.two-column-fluid .right-column::before {
+	background: #951b44;
+}
+.two-column-fluid .right-column .quote-icon {
+	background: #951b44;
+	border-color: #951b44;
+}
+
+.default-featured-column .image-box .post-tag {
+	background: #951b44;
+}
+
+.testimonials-section .slide-item .designation {
+	color: #951b44;
+}
+
+.testimonials-section .owl-controls .owl-next, .testimonials-section .owl-controls .owl-prev {
+	background: #951b44 !important;
+}
+
+.testimonials-section .owl-controls .owl-next:hover,
+.testimonials-section .owl-controls .owl-prev:hover{
+	background:#951b44 !important;	
+}
+
+.subscribe-intro {
+	background: #951b44;
+}
+
+.main-footer .contact-info li .icon {
+	color: #951b44;
+}
